@@ -43,4 +43,7 @@ TEMPERATURE="0"
 QA_WITH_SOURCE="false"
 ```
 
+## Architecture
+![My Image](/Users/ayush.sharma/OlxPert-QnA/images/olxpert.png "OlxPert Architecture")
+
 

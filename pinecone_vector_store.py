@@ -1,4 +1,5 @@
 import os
+import streamlit
 
 from dotenv import load_dotenv
 from langchain.vectorstores import Pinecone
@@ -11,13 +12,16 @@ load_dotenv()
 # can be moved to a separate config class
 def get_index_name():
     # load environment variables from .env file
-    index_name = os.getenv("PINECONE_INDEX_NAME")
+    # index_name = os.getenv("PINECONE_INDEX_NAME")
+    index_name = streamlit.secrets["PINECONE_INDEX_NAME"]
     return index_name
 
 
 def init_pinecone():
-    pinecone_api_key = os.getenv("PINECONE_API_KEY")
-    pinecone_api_env = os.getenv("PINECONE_API_ENV")
+    # pinecone_api_key = os.getenv("PINECONE_API_KEY")
+    pinecone_api_key = streamlit.secrets["PINECONE_API_KEY"]
+    # pinecone_api_env = os.getenv("PINECONE_API_ENV")
+    pinecone_api_env = streamlit.secrets["PINECONE_API_ENV"]
     pinecone.init(api_key=pinecone_api_key, environment=pinecone_api_env)
 
 

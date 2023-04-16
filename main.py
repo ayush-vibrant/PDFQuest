@@ -57,8 +57,10 @@ class PDFUploader:
         self.result = None
         self.vector_store = None
         self.embeddings = None
-        self.use_pinecone = os.environ.get('USE_PINECONE', 'false').lower() == 'true'
-        self.run_qa_with_source = os.environ.get('QA_WITH_SOURCE', 'false').lower() == 'true'
+        # self.use_pinecone = os.environ.get('USE_PINECONE', 'false').lower() == 'true'
+        self.use_pinecone = st.secrets["USE_PINECONE"] == 'true'
+        # self.run_qa_with_source = os.environ.get('QA_WITH_SOURCE', 'false').lower() == 'true'
+        self.run_qa_with_source = st.secrets["QA_WITH_SOURCE"] == 'true'
         self.show_qa = False
 
     def load_pdf(self):

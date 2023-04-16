@@ -1,5 +1,6 @@
 import os
 
+import streamlit
 from langchain import VectorDBQA
 from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
@@ -12,7 +13,8 @@ load_dotenv()
 class QASystem:
     @staticmethod
     def qa_without_sources(vector_store, query):
-        openai_api_key = os.getenv("OPENAI_API_KEY")
+        # openai_api_key = os.getenv("OPENAI_API_KEY")
+        openai_api_key = streamlit.secrets["OPENAI_API_KEY"]
 
         llm = OpenAI(temperature=0, openai_api_key=openai_api_key)
         chain = load_qa_chain(llm, chain_type="stuff")
@@ -37,7 +39,8 @@ class QASystem:
     def retrieve_document(vector_store, query):
         llm = OpenAI()
         retriever = vector_store.as_retriever()
-        should_return_source_documents = os.environ.get('QA_WITH_SOURCE', 'false').lower() == 'true'
+        # should_return_source_documents = os.environ.get('QA_WITH_SOURCE', 'false').lower() == 'true'
+        should_return_source_documents = streamlit.secrets["QA_WITH_SOURCE"] == 'true'
         qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff",
                                          retriever=retriever, return_source_documents=should_return_source_documents)
         result = qa({"query": query})

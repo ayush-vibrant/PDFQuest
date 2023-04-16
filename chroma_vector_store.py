@@ -1,5 +1,5 @@
 from langchain.vectorstores import Chroma
-from utils.vector_store_strategy import SearchStrategy
+from vector_store_strategy import SearchStrategy
 
 
 class ChromaSearch(SearchStrategy):

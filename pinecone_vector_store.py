@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from langchain.vectorstores import Pinecone
 import pinecone
 
-from utils.vector_store_strategy import SearchStrategy
+from vector_store_strategy import SearchStrategy
 
 load_dotenv()
 

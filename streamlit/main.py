@@ -1,13 +1,11 @@
-import os
-
 import streamlit as st
 
-from QASystem import QASystem
-from openai_utils import init_embeddings_object
-from chroma_vector_store import ChromaSearch
-from pdf_utils import load_document_pages, split_document_into_chunks
-from pinecone_vector_store import PineconeSearch
-from formatter import format_docs
+from utils.QASystem import QASystem
+from utils.openai_utils import init_embeddings_object
+from utils.chroma_vector_store import ChromaSearch
+from utils.pdf_utils import load_document_pages, split_document_into_chunks
+from utils.pinecone_vector_store import PineconeSearch
+from utils.formatter import format_docs
 from dotenv import load_dotenv
 
 load_dotenv()

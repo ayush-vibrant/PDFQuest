@@ -4,8 +4,8 @@ OlxPert is an AI-powered PDF QA tool that enables you to easily upload and analy
 
 ## Installation
 
-1. Clone the repository using `git clone https://github.com/ayush-vibrant/OlxPert.git`
-2. Navigate to the project directory by running `cd OlxPert`
+1. Clone the repository using `git clone https://github.com/ayush-vibrant/OlxPert-QnA.git`
+2. Navigate to the project directory by running `cd OlxPert-QnA`
 3. Install the required packages using `pip install -r requirements.txt`
 
 ## Usage

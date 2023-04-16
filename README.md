@@ -30,4 +30,17 @@ QA_WITH_SOURCE=false
 ```
 
 
+For streamlit applications. Secrets management happens from a different file. See [this](https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app/connect-to-data-sources/secrets-management) for more information.
+
+Add a file called `secrets.toml` in a folder called `.streamlit` at the root of your app repo, and copy/paste your secrets into that file.
+```
+OPENAI_API_KEY="your openai api key"
+PINECONE_API_KEY="your pinecone api key"
+PINECONE_API_ENV="your pinecone api env"
+USE_PINECONE="false"
+PINECONE_INDEX_NAME="test"
+TEMPERATURE="0"
+QA_WITH_SOURCE="false"
+```
+
 

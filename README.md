@@ -19,13 +19,15 @@ In the command, replace folder-location/ with the actual path to the OlxPert dir
 
 Before running the app, make sure to create a `.env` file in your local system and add the following environment variables:
 
-OPENAI_API_KEY=<<your openai api key>>
-PINECONE_API_KEY=<<your pinecone api key>>
-PINECONE_API_ENV=<<your pinecone api env>>
+```
+OPENAI_API_KEY=<your openai api key>
+PINECONE_API_KEY=<your pinecone api key>
+PINECONE_API_ENV=<your pinecone api env>
 USE_PINECONE=false
-PINECONE_INDEX_NAME=<<test>>
+PINECONE_INDEX_NAME=<test>
 TEMPERATURE=0
 QA_WITH_SOURCE=false
+```
 
 
 

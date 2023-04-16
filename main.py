@@ -66,7 +66,7 @@ class PDFUploader:
         if self.file_path:
             if self.file_path.type == "application/pdf":
                 print("PDF uploaded successfully.")
-                st.write("PDF uploaded successfully.")
+                st.write(":white_check_mark: PDF uploaded successfully.")
                 self.pages = load_document_pages(self.file_path)
                 self.texts = split_document_into_chunks(self.pages)
             else:
@@ -77,7 +77,7 @@ class PDFUploader:
             self.embeddings = init_embeddings_object()
             search_strategy = self.get_search_strategy()
             self.vector_store = search_strategy.push_documents(self.texts, self.embeddings)
-            st.write("PDF text uploaded to vector store.")
+            st.write(":white_check_mark: PDF text uploaded to vector store.")
 
     def get_search_strategy(self):
         if self.use_pinecone:
@@ -108,8 +108,8 @@ class PDFUploader:
 
     def display_result(self):
         if self.result:
-            st.write(f"Question: {self.question}")
-            st.write(f"Answer: {self.result['result']}")
+            st.write(f":question: Question: {self.question}")
+            st.write(f":zap: Answer: {self.result['result']}")
             if self.run_qa_with_source:
                 with st.expander("Show Source"):
                     st.write("The relevant source documents are:")

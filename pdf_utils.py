@@ -26,11 +26,4 @@ def split_document_into_chunks(pages):
     num_texts = len(texts)
     print(f'The documents have been split into {num_texts} chunks')
 
-    # for i, text in enumerate(texts):
-    #     if not isinstance(text, str):
-    #         print(f"Element {i} is not a string: {text}")
-    #
-    # metadata = [doc.metadata for doc in texts]
-    # print(metadata)
-
     return texts

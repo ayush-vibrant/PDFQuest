@@ -10,7 +10,7 @@ OlxPert is an AI-powered PDF QA tool that enables you to easily upload and analy
 
 ## Usage
 
-To use OlxPert, simply run `python -m streamlit run folder-location/OlxPert/streamlit/main.py` in your terminal. This will start a local server that you can access through your web browser.
+To use OlxPert, simply run `python -m streamlit run folder-location/OlxPert-QnA/streamlit/main.py` in your terminal. This will start a local server that you can access through your web browser.
 In the command, replace folder-location/ with the actual path to the OlxPert directory on your machine.
 
 

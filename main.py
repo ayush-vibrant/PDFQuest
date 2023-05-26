@@ -12,10 +12,10 @@ load_dotenv()
 
 st.set_page_config(page_title="PDF QA Tool", page_icon=":magic_wand:", layout="centered")
 
-st.title(" :magic_wand: OlxPert: PDF Question-Answering Tool")
-st.caption("OlxPert is an AI-powered PDF QA tool that enables you to easily upload and analyze PDF documents"
+st.title(" :magic_wand: PDFQuest: PDF Question-Answering Tool")
+st.caption("PDFQuest is an AI-powered PDF QA tool that enables you to easily upload and analyze PDF documents"
            " with advanced question-answering capabilities. "
-           " OlxPert goes beyond traditional keyword-based search "
+           " PDFQuest goes beyond traditional keyword-based search "
            " and utilizes vector embeddings and semantic search "
            "to deliver precise and efficient results"
            " from your PDFs to improve your workflow efficiency.")

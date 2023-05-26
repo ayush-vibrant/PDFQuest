@@ -4,14 +4,14 @@ PDFQuest is an AI-powered PDF QA tool that enables you to easily upload and anal
 
 ## Installation
 
-1. Clone the repository using `git clone https://github.com/ayush-vibrant/OlxPert-QnA.git`
-2. Navigate to the project directory by running `cd OlxPert-QnA`
+1. Clone the repository using `git clone https://github.com/ayush-vibrant/PDFQuest.git`
+2. Navigate to the project directory by running `cd PDFQuest`
 3. Install the required packages using `pip install -r requirements.txt`
 
 ## Usage
 
-To use OlxPert, simply run `python -m streamlit run folder-location/OlxPert-QnA/streamlit/main.py` in your terminal. This will start a local server that you can access through your web browser.
-In the command, replace folder-location/ with the actual path to the OlxPert directory on your machine.
+To use PDFQuest, simply run `python -m streamlit run folder-location/PDFQuest/streamlit/main.py` in your terminal. This will start a local server that you can access through your web browser.
+In the command, replace folder-location/ with the actual path to the PDFQuest directory on your machine.
 
 
 

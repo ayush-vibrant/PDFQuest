@@ -1,6 +1,6 @@
-# 🪄 OlxPert: PDF Question-Answer tool
+# 🪄 PDFQuest: PDF Question-Answer tool
 
-OlxPert is an AI-powered PDF QA tool that enables you to easily upload and analyze PDF documents with **advanced question-answering capabilities**. OlxPert goes beyond traditional keyword-based search and utilizes *vector embeddings* and *semantic search* to deliver precise and efficient results from your PDFs to improve your workflow efficiency.
+PDFQuest is an AI-powered PDF QA tool that enables you to easily upload and analyze PDF documents with **advanced question-answering capabilities**. PDFQuest goes beyond traditional keyword-based search and utilizes *vector embeddings* and *semantic search* to deliver precise and efficient results from your PDFs to improve your workflow efficiency.
 
 ## Installation
 
@@ -44,6 +44,6 @@ QA_WITH_SOURCE="false"
 ```
 
 ## Architecture
-![My Image](images/olxpert.png "OlxPert Architecture")
+![My Image](images/PDFQuest.png "PDFQuest Architecture")
 
 
